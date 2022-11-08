@@ -7,7 +7,7 @@ export const Header = () => {
         <Fragment>
             <header class="section-header">
 
-<nav class="navbar navbar-dark navbar-expand p-0 bg-dark">
+{/*<nav class="navbar navbar-dark navbar-expand p-0 bg-dark">
 <div class="container-fluid">
     <ul class="navbar-nav d-none d-md-flex mr-auto">
 		<li class="nav-item"><a class="nav-link" href="http" data-abc="true">Cash On Delivery</a></li>
@@ -27,7 +27,7 @@ export const Header = () => {
 	</ul> 
   </div> 
 
-</nav> 
+    </nav>*/}
 
 <section class="header-main border-bottom bg-white">
 	<div class="container-fluid">
