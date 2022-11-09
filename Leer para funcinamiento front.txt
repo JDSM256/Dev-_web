@@ -1,0 +1,2 @@
+1. npx create-react-app . ( ver videos de Nataly proceso de creación front para el agregado de node_modules)
+2. dentro de la carpeta front en la terminal instalar por medio de comando npm i axios react-alert react-alert-template-basic react-bootstrap bootstrap react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom
