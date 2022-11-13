@@ -1,17 +1,17 @@
 import React, { Fragment, useEffect } from 'react'
 import MetaData from './components/layout/MetaData'
-import {useDispatch, useSelector} from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { getProducts } from './actions/productActions'
 import { Link } from 'react-router-dom'
-import { useAlert} from 'react-alert'
+import { useAlert } from 'react-alert'
 
 export const Home = () => {
-    const { loading, productos, error} = useSelector(state=> state.products)
-    const alert= useAlert();
+    const { loading, productos, error } = useSelector(state => state.products)
+    const alert = useAlert();
 
     const dispatch = useDispatch();
     useEffect(() => {
-        if (error){
+        if (error) {
             return alert.error(error)
         }
 
@@ -22,8 +22,8 @@ export const Home = () => {
 
     return (
         <Fragment>
-<MetaData title="Nueva Temporada"></MetaData>
-<div style={{'height':'50px'}}></div>
+            <MetaData title="Nueva Temporada"></MetaData>
+            <div style={{ 'height': '50px' }}></div>
             <h1 id="productos-layout">Productos</h1>
             <section id="productos" class='container mt-5'>
                 <div className='row'>
@@ -39,7 +39,7 @@ export const Home = () => {
                                     <span id="No_de_opiniones"> 5 Reviews</span>
                                 </div>
                                 <p className='card-text'>$70.000</p><a href="http" id="ver_producto" className='btn btn-danger'>
-                                Ver detalle</a>
+                                    Ver detalle</a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export const Home = () => {
                                     <span id="No_de_opiniones"> 5 Reviews</span>
                                 </div>
                                 <p className='card-text'>$70.000</p><a href="http" id="ver_producto" className='btn btn-danger'>
-                                Ver detalle</a>
+                                    Ver detalle</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export const Home = () => {
                                     <span id="No_de_opiniones"> 5 Reviews</span>
                                 </div>
                                 <p className='card-text'>$70.000</p><a href="http" id="ver_producto" className='btn btn-danger'>
-                                Ver detalle</a>
+                                    Ver detalle</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export const Home = () => {
                                     <span id="No_de_opiniones"> 5 Reviews</span>
                                 </div>
                                 <p className='card-text'>$70.000</p><a href="http" id="ver_producto" className='btn btn-danger'>
-                                Ver detalle</a>
+                                    Ver detalle</a>
                             </div>
                         </div>
                     </div>
@@ -107,14 +107,14 @@ export const Home = () => {
                                     <span id="No_de_opiniones"> 5 Reviews</span>
                                 </div>
                                 <p className='card-text'>$70.000</p><a href="http" id="ver_producto" className='btn btn-danger'>
-                                Ver detalle</a>
+                                    Ver detalle</a>
                             </div>
                         </div>
                     </div>
 
 
 
-                    
+
                 </div>
             </section>
 
