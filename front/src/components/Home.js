@@ -42,7 +42,7 @@ export const Home = () => {
                                                 </div>
                                                 <span id="No_de_opiniones">{producto.numCalificaciones} Reviews</span>
                                             </div>
-                                            <p className='card-text'>${producto.precio}</p><Link to={`/producto/${producto._id}`} id="ver_producto" className='btn btn-danger'>
+                                            <p className='card-text'>${producto.precio}</p><Link to={`/productos/${producto._id}`} id="ver_producto" className='btn btn-danger'>
                                                 Ver detalle</Link>
                                         </div>
                                     </div>

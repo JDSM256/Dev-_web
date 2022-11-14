@@ -10,8 +10,22 @@ body {
 h1{
   font-family: 'Holtwood One SC', sans-serif !important;
 }
+h4{
+font-weight:bold
+}
 
+p{
+  font-size:12px
+}
 
+h3{
+  font-family: 'Holtwood One SC', sans-serif !important;
+}
+
+#precio_producto{
+  font-size:18px;
+  font-weight:bold
+}
 .form-inputs{
   position:relative;
 }
