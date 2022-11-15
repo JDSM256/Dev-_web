@@ -1,2 +1,16 @@
-1. npx create-react-app . ( ver videos de Nataly proceso de creación front para el agregado de node_modules)
-2. dentro de la carpeta front en la terminal instalar por medio de comando npm i axios react-alert react-alert-template-basic react-bootstrap bootstrap react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom
+node_modules/.bin/nodemon: Permission denied Solución (sudo npm install -g nodemon)
+Iniciar Base de datos (brew services run mongodb-community)
+npm run dev
+
+npm install para dependencias
+
+Error=> 
+“Could not resolve dependency: npm ERR! peer react@"^16.8.1 || ^17" from react-alert@7.0.3 npm ERR! node_modules/react-alert npm ERR! react-alert@"*" from the root project” Code Answer’s
+
+Solución=>
+npm config set legacy-peer-deps true
+npm i
+
+Iniciar Front (npm start)
+npx create-react-app . ( ver videos de Nataly proceso de creación front para el agregado de node_modules)
+dentro de la carpeta front en la terminal instalar por medio de comando npm i axios react-alert react-alert-template-basic react-bootstrap bootstrap react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom

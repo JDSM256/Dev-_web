@@ -35,14 +35,14 @@ export const Home = () => {
                                     <div className='card p-3 rounded'>
                                         <img src={producto.imagen[0].url} alt=""></img>
                                         <div className='card-body d-flex flex-column'>
-                                            <h6 id="titulo_producto"><Link to={`/producto/${producto._id}`}>{producto.nombre}</Link></h6>
+                                            <h6 id="titulo_producto"><Link to={`/productos/${producto._id}`}>{producto.nombre}</Link></h6>
                                             <div className='rating mt-auto'>
                                                 <div className='rating-outer'>
                                                     <div className='rating-inner' style={{ width: `${(producto.calificacion / 5) * 100}` }} ></div>
                                                 </div>
                                                 <span id="No_de_opiniones">{producto.numCalificaciones} Reviews</span>
                                             </div>
-                                            <p className='card-text'>${producto.precio}</p><Link to={`/productos/${producto._id}`} id="ver_producto" className='btn btn-danger'>
+                                            <p className='card-text'>${producto.precio}</p><Link to={`/productos/${producto._id}`} id="ver_producto" className='btn btn-outline-danger'>
                                                 Ver detalle</Link>
                                         </div>
                                     </div>
