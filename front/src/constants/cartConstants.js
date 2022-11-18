@@ -1,0 +1,2 @@
+export const ADD_TO_CARS="ADD_TO_CART"
+export const REMOTE_ITEM_CART="REMOVE_ITEM-CART"

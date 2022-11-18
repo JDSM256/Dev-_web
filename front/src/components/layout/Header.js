@@ -1,8 +1,14 @@
 import React, { Fragment } from 'react'
+import { useAlert } from 'react-alert'
+import { useDispatch, useSelector } from 'react-redux'
 import "../../App.css"
 //import { Link } from "react-router-dom"
 
 export const Header = () => {
+  const {cartItems} = useSelector(state=>state.cart)
+  const alert= useAlert();
+  const dispatch= useDispatch ();
+  const dispatch= useDispatch ();
     return (
         <Fragment>
             <header class="section-header">

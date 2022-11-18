@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { getProductDetails, clearErrors } from '../../actions/productActions'
 import { useAlert } from 'react-alert'
 import { Carousel } from 'react-bootstrap'
+import { addItemToCart } from '../../reducer/cartReducer'
 
 export const ProductDetails = () => {
   const { loading, product, error } = useSelector(state => state.productDetails)
@@ -40,6 +41,12 @@ export const ProductDetails = () => {
 }
 
 
+const addToCart= () =>{
+  dispatch( addItemToCart(id, quantity ));
+  alert.success("Producto agregado al carrito ")
+
+}
+
   return (
     <Fragment>
       {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> : (
@@ -74,7 +81,7 @@ export const ProductDetails = () => {
               </div>
               <div className="row">
                 <div className="col-lg-12">
-                  <button type="button" id="carrito_btn" className="btn btn-outline-dark d-inline ml-8" disabled={product.inventario === 0}>Agregar al Carrito</button>
+                  <button type="button" id="carrito_btn" className="btn btn-outline-dark d-inline ml-8" disabled={product.inventario === 0} onClick={addToCart}>Agregar al Carrito</button>
                 </div>
               </div>
               <hr />

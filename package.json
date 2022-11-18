@@ -13,9 +13,17 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.7.1"
+    "mongoose": "^6.7.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDSM256/Dev-_web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JDSM256/Dev-_web/issues"
+  },
+  "homepage": "https://github.com/JDSM256/Dev-_web#readme"
 }
